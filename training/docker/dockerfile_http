@@ -1,0 +1,15 @@
+FROM ubuntu:22.04
+
+COPY main main
+
+EXPOSE 8085
+
+ENTRYPOINT ["./main"]
+
+
+
+#docker start,stop,restart,  rm  -->to learn
+#uses img3
+# docker run -it -p localport:containerport
+
+# docker ps,  docker ps -a, docker build -f dockerfile_http -t img3 . ,  docker run -it img1 .

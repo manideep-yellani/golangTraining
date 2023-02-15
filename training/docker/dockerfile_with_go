@@ -1,0 +1,7 @@
+FROM golang:1.20
+
+COPY dockergo.go main.go
+
+ADD  dockergo.go main.go
+
+ENTRYPOINT ["/usr/local/go/bin/go", "run", "main.go"]
