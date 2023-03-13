@@ -1,0 +1,5 @@
+FROM golang:1.20
+COPY helloworld.go main.go
+EXPOSE 8080
+
+ENTRYPOINT ["/usr/local/go/bin/go", "run", "main.go"]

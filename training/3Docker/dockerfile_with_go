@@ -1,0 +1,7 @@
+FROM golang:1.20
+
+COPY helloworld.go main.go
+
+ADD  helloworld.go main.go
+
+ENTRYPOINT ["/usr/local/go/bin/go", "run", "main.go"]

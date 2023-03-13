@@ -1,0 +1,14 @@
+FROM ubuntu:22.04
+
+COPY main main
+
+EXPOSE 8085
+
+ENTRYPOINT ["./main"]
+
+
+
+#3Docker start,stop,restart,  rm  -->to learn
+#uses img3
+# 3Docker run -it -p localport:containerport
+# 3Docker ps,  3Docker ps -a, 3Docker build -f dockerfile_http -t img3 . ,  3Docker run -it img1 .
